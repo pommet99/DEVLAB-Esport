@@ -1,2 +1,2 @@
 # DEVLAB-Esport
-Draft website for CTR
+Student Project, Draft website for Crash Team Racing on Laravel.
