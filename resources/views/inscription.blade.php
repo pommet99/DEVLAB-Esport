@@ -22,8 +22,6 @@
 			<p style="color:red;">{{ $errors->first('password_confirmation') }}</p>
 		@endif
 		<p><p><label>Confirmation mot de passe</label></p><p><input type="password" name="password_confirmation"></p>
-
-		<p><p><label>Rank</label></p><p><input type="rank" name="rank"></p>
 		
 		<p><input type="submit" value="Inscription"></p>
 	</form>

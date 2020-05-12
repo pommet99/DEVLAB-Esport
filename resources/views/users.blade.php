@@ -6,8 +6,8 @@
 	<h1>Les utilisateurs</h1>
 	
 	<ul style="list-style: none;">
-		@foreach($utilisateurs as $utilisateur)
-			<li>{{ $utilisateur->pseudo }}</li>
+		@foreach($users as $users)
+			<li>{{ $users->pseudo }}</li>
 		@endforeach
 	</ul>
 </div>

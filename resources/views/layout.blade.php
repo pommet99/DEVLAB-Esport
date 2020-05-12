@@ -81,23 +81,7 @@
 				bottom: 0;
 			}
 			
-		.button_salon{
-			height: 45px;
-			line-height: 40px;
-			width:  150px;
-			transition: .25s;
-			border: solid white 1px;
-			background-color: whitesmoke;
-		}
-		@keyframes button_nav_anim{
-			0%{background: linear-gradient(45deg, orange, yellow);}
-			100%{background: linear-gradient(45deg, orange, yellow);}
-		}
-		.button_salon:hover{
-			border: solid #18171B 1px; 
-			animation: button_nav_anim 0.1s forwards;
-			transform: scale(0.95,0.95);
-		}
+
 		.button_tournoi{
 			height: 45px;
 			line-height: 40px;
@@ -115,42 +99,42 @@
 			animation: button_nav_anim 0.1s forwards;
 			transform: scale(0.95,0.95);
 		}
-		.salon_create_div{
+		.tournoi_create_div{
 			margin: auto;
 			margin-top:100px;
-			border: solid white 3px;
-			background-color: rgba(160, 160, 160, 0.8);
+			border: solid black 4px;
+			background-color: rgba(180, 180, 180, 0.9);
 			height: 500px;
 			width: 70%;
 		}
-		.salon_create_div_left{
+		.tournoi_create_div_left{
 			float: left;
 			height: 480px;
 			margin: 10px;
 			width: calc(50% - 17.5px);
-			border:solid white 1px;
+			border:solid white 2px;
 		}
-		.salon_create_div_right{
+		.tournoi_create_div_right{
 			float: right;
 			height: 480px;
 			margin: 10px;
 			margin-left: 0;
 			width: calc(50% - 17.5px);
 		}
-		.salon_create_left{
+		.tournoi_create_left{
 			margin-top:50px;
 			text-align: center;
 		}
 		.choix_des_cartes_div_titre{
 			margin: auto;
 			margin-top: 10px;
-			border: solid white 1px;
+			border: solid white 2px;
 			height: 60px;
 			width: calc(100% - 20px);
 		}
 		.choix_des_cartes_div{
 			margin: auto;
-			border: solid white 1px;
+			border: solid black 2px;
 			height: 387px;
 			margin-top: 10px;
 			width: calc(100% - 20px);
