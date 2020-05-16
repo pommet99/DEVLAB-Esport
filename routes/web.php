@@ -27,6 +27,7 @@ Route::get('/deconnexion', 'CompteController@deconnexion');
 Route::get('/tournoi', 'TournoiController@tournoi');
 Route::get('/tournoicreate', 'TournoiController@creer');
 Route::get('/tournoijoin', 'TournoiController@rejoindre');
+Route::get('/tournoisee', 'TournoiController@see');
 
 
 Route::post('/tournoicreate', 'TournoiController@creertraitement');

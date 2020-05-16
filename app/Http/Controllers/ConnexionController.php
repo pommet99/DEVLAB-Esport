@@ -12,12 +12,12 @@ class ConnexionController extends Controller
 	
     public function traitement(){
 		request()->validate([
-			'pseudo' => ['required'],
+			'name' => ['required'],
 			'password' => ['required'],
 		]);
 		
 		$resultat = auth()->attempt([
-			'pseudo' => request('pseudo'),
+			'name' => request('name'),
 			'password' => request('password'),
 		]);
 		
@@ -26,7 +26,7 @@ class ConnexionController extends Controller
 		}
 		
 		return back()->withInput()->withErrors([
-			'pseudo' => 'Vos Identifiants sont incorrects.',
+			'name' => 'Vos Identifiants sont incorrects.',
 		]);
 	}
 }

@@ -13,6 +13,10 @@ class TournoiController extends Controller
     public function creer(){
 		return view('Tournoicreate');
 	}
+
+	public function see(){
+		return view('Tournoisee');
+	}
 	
     public function rejoindre(){
 		return view('Tournoijoin');

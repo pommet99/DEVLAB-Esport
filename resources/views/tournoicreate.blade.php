@@ -38,7 +38,7 @@
 				<h3 style="margin-left:35%">Choix des cartes</h3>
 			</div>
 			<div class="choix_des_cartes_div">
-				<div class="carte">Crash Cove</div>
+				<div class="carte" background-image="url(<?php echo asset('storage/Crash_cove.jpg');?>">Crash Cove</div>
 				<div class="carte">Mystery Caves</div>
 				<div class="carte">Sewer Speedway</div>
 				<div class="carte">Roo's Tubes</div>

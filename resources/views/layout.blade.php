@@ -102,8 +102,8 @@
 		.tournoi_create_div{
 			margin: auto;
 			margin-top:100px;
-			border: solid black 4px;
-			background-color: rgba(180, 180, 180, 0.9);
+			border: solid white 3px;
+			background-color: rgba(180, 180, 180, 1);
 			height: 500px;
 			width: 70%;
 		}
@@ -112,7 +112,6 @@
 			height: 480px;
 			margin: 10px;
 			width: calc(50% - 17.5px);
-			border:solid white 2px;
 		}
 		.tournoi_create_div_right{
 			float: right;
@@ -128,13 +127,11 @@
 		.choix_des_cartes_div_titre{
 			margin: auto;
 			margin-top: 10px;
-			border: solid white 2px;
 			height: 60px;
 			width: calc(100% - 20px);
 		}
 		.choix_des_cartes_div{
 			margin: auto;
-			border: solid black 2px;
 			height: 387px;
 			margin-top: 10px;
 			width: calc(100% - 20px);
@@ -153,7 +150,7 @@
 			width: 30%;
 			height: 300px;
 			border: solid white 1px;
-			background-color: rgba(160, 160, 160, 0.8);
+			background-color: rgba(180, 180, 180, 1);
 			display:inline-block;
 			text-align:center;
 			margin: 5px;
@@ -162,7 +159,7 @@
 		#connexion{
 		  text-align: center;
 		  color:black;
-		  background-color:rgba(160, 160, 160, 0.8);
+		  background-color:rgba(180, 180, 180, 1);
 		  width:25%;
 		  border: solid white 1px;
 		  margin-top:12%;
@@ -173,7 +170,7 @@
 		#inscription{
 		  text-align: center;
 		  color:black;
-		  background-color:rgba(160, 160, 160, 0.8);
+		  background-color:rgba(180, 180, 180, 1);
 		  width:25%;
 		  border: solid white 1px;
 		  margin-top:12%;
