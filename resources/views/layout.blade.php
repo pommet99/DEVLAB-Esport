@@ -178,7 +178,6 @@
 		  padding:10px;
 		}
 
-
 	</style>
 	</head>
 	<header id="header">

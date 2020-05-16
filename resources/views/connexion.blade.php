@@ -9,9 +9,9 @@
 	<form action="" method="POST">
 	{{ csrf_field()  }}
 		@if($errors->has('pseudo'))
-			<p style="color:red;">{{ $errors->first('user_name') }}</p>
+			<p style="color:red;">{{ $errors->first('name') }}</p>
 		@endif
-		<p><label>Pseudo</label></p><p><input type="text" name="name" value="{{ old('user_name') }}"></p>
+		<p><label>Pseudo</label></p><p><input type="text" name="name" value="{{ old('name') }}"></p>
 		
 		@if($errors->has('password'))
 			<p style="color:red;">{{ $errors->first('password') }}</p>
