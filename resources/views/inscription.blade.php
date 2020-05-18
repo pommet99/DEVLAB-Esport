@@ -16,7 +16,7 @@
 		@if($errors->has('Pseudo'))
 			<p style="color:red;">{{ $errors->first('pseudo') }}</p>
 		@endif
-		<p><label>Pseudo</label></p><p><input type="text" name="pseudo" value="{{ old('pseudo') }}"></p>
+		<p><label>Preudo</label></p><p><input type="text" name="pseudo" value="{{ old('pseudo') }}"></p>
 		
 		@if($errors->has('password'))
 			<p style="color:red;">{{ $errors->first('password') }}</p>
