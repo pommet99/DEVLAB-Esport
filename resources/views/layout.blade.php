@@ -106,8 +106,8 @@
 		.tournoi_create_div{
 			margin: auto;
 			margin-top:100px;
-			border: solid black 3px;
-			background-color: lightgrey;
+			border: solid white 3px;
+			background-color: rgba(180, 180, 180, 1);
 			height: 500px;
 			width: 70%;
 		}
@@ -150,20 +150,11 @@
 			height: 100px;
 			line-height: 100px;
 		}
-		.all_salon_display{
-			width: 30%;
-			height: 300px;
-			border: solid white 1px;
-			background-color: 
-			display:inline-block;
-			text-align:center;
-			margin: 5px;
-		}
 
 		#connexion{
 		  text-align: center;
 		  color:black;
-		  background-color:lightgrey;
+		  background-color:rgba(180, 180, 180, 1);
 		  width:25%;
 		  border: solid white 1px;
 		  margin-top:12%;
@@ -174,40 +165,13 @@
 		#inscription{
 		  text-align: center;
 		  color:black;
-		  background-color:lightgrey;
+		  background-color:rgba(180, 180, 180, 1);
 		  width:25%;
 		  border: solid white 1px;
 		  margin-top:12%;
 		  margin-left:37%;
 		  padding:10px;
 		}
-
-		.Compte{
-			background-color:lightgrey;
-			width:30%;
-			height:330px;
-			margin-top:200px;
-			margin-left:35%;
-			border-radius:20px;
-			padding:10px;
-			text-align: center;
-		}
-
-		.button{
-			background-color: black;
-			text-decoration: none;
-			font-family: 'Times New Roman', Times, serif;
-			color: white;
-			border-radius:100px;
-			padding:8px;
-		}
-
-
-/*RESPONSIVE*/
- 
-         
-
-
 
 	</style>
 	</head>

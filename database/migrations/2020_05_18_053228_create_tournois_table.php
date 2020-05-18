@@ -18,9 +18,9 @@ class CreateTournoisTable extends Migration
             $table->timestamps();
 			$table->string('nom')->unique();
 			$table->string('password');
-			$table->date('date_tournoi');
-			$table->integer('utilisateurs_id');
-			$table->integer('cartes_id');
+			$table->date('date');
+			$table->integer('utilisateurs_id')->nullable();
+			$table->integer('cartes_id')->nullable();
 			$table->foreign('utilisateurs_id')->references('id')->on('utilisateurs')->onDelete('cascade')->nullable();
 			$table->foreign('cartes_id')->references('id')->on('cartes')->nullable();
         });

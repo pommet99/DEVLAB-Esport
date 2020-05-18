@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Tournoi;
 
 class TournoiController extends Controller
@@ -11,35 +12,48 @@ class TournoiController extends Controller
 	}
 
     public function creer(){
+		
+		if (auth()->guest()){
+			return redirect('/connexion')->withErrors([
+			 'email' => "Connectez vous pour créer un tournoi",
+			]);
+		}		
 		return view('Tournoicreate');
+
 	}
 
 	public function see(){
-		return view('Tournoisee');
+		$tournois = Tournoi::all();
+
+		return view('Tournoisee', [
+			'tournois' => $tournois,
+		]);
 	}
 	
     public function rejoindre(){
-		return view('Tournoijoin');
+		$tournois = Tournoi::all();
+
+		return view('Tournoijoin', [
+			'tournois' => $tournois,
+		]);
     }
 
-        public function creertournoi(){
+    public function traitement(){
 		request()->validate([
-			'name' => ['required'],
-			'password' => ['min:3'],
-			'date' => ['required'],
-			'admin' => ['required'],
-			
+			'nom' => ['required', 'unique:tournois'],
+			'password' => ['required', 'min:6'],
+			'date' => ['required', 'date'],
 		]);
 		
 		
-		$salon = Tournoi::create([
-			'name' => request('name'),
+		$tournoi = Tournoi::create([
+			'nom' => request('nom'),
 			'password' => bcrypt(request('password')),
 			'date' => request('date'),
-			'rank' => request('rank'),
 		]);
 		
-		return redirect('/tournoicreate');
+		if ($tournoi){
+			return redirect('/tournoijoin');
+		}
 	}
-    
 }

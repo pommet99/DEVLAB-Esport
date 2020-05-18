@@ -19,7 +19,7 @@ class CreateUtilisateursTable extends Migration
 			$table->string('email')->unique();
 			$table->string('pseudo')->unique();
 			$table->string('password');
-			$table->text('role')->nullable();
+			$table->string('role')->nullable();
         });
     }
 

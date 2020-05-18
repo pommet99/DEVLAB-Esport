@@ -31,11 +31,11 @@ Route::get('/utilisateurs', 'UtilisateursController@liste');
 // TOURNOI
 
 Route::get('/tournoi', 'TournoiController@tournoi');
-Route::get('/tournoicreate', 'TournoiController@creer');
 Route::get('/tournoijoin', 'TournoiController@rejoindre');
 Route::get('/tournoisee', 'TournoiController@see');
 
-Route::post('/tournoicreate', 'TournoiController@creertraitement');
+Route::get('/tournoicreate', 'TournoiController@creer');
+Route::post('/tournoicreate', 'TournoiController@traitement');
 
 // CARTE
 

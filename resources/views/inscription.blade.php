@@ -13,10 +13,10 @@
 		@endif
 		<p><label>Email</label></p><p><input type="email" name="email" value="{{ old('email') }}"></p>
 		
-		@if($errors->has('Pseudo'))
+		@if($errors->has('pseudo'))
 			<p style="color:red;">{{ $errors->first('pseudo') }}</p>
 		@endif
-		<p><label>Preudo</label></p><p><input type="text" name="pseudo" value="{{ old('pseudo') }}"></p>
+		<p><label>Pseudo</label></p><p><input type="text" name="pseudo" value="{{ old('pseudo') }}"></p>
 		
 		@if($errors->has('password'))
 			<p style="color:red;">{{ $errors->first('password') }}</p>
