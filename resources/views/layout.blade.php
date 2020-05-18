@@ -147,11 +147,7 @@
 			width: 30%;
 			height: 300px;
 			border: solid white 1px;
-<<<<<<< Updated upstream
-			background-color: rgba(180, 180, 180, 1);
-=======
 			background-color: lightgrey;
->>>>>>> Stashed changes
 			display:inline-block;
 			text-align:center;
 			margin: 5px;
@@ -159,13 +155,8 @@
 
 		#connexion{
 		  text-align: center;
-<<<<<<< Updated upstream
-		  color:black;
-		  background-color:rgba(180, 180, 180, 1);
-=======
 		  background-color:black;
 		  color:white;
->>>>>>> Stashed changes
 		  width:25%;
 		  margin-top:12%;
 		  margin-left:37%;
@@ -176,13 +167,8 @@
 
 		#inscription{
 		  text-align: center;
-<<<<<<< Updated upstream
-		  color:black;
-		  background-color:rgba(180, 180, 180, 1);
-=======
 		  background-color:black;
 		  color:white;
->>>>>>> Stashed changes
 		  width:25%;
 		  margin-top:12%;
 		  margin-left:37%;
@@ -191,8 +177,6 @@
 		  border-radius: 20px;
 		}
 
-<<<<<<< Updated upstream
-=======
 		.Compte{
 			background-color:black;
 			width:30%;
@@ -245,7 +229,6 @@
 
 
 
->>>>>>> Stashed changes
 	</style>
 	</head>
 	<header id="header">
@@ -269,13 +252,8 @@
 <script>
 
 function newBorder1(){
-<<<<<<< Updated upstream
-  document.getElementById("header").style.borderColor = "orange"
-  document.getElementById("footer").style.borderColor = "orange"
-=======
   getHeader.borderColor = "lime";
   getFooter.borderColor = "lime";
->>>>>>> Stashed changes
 }
 
 function newBorder2(){
@@ -283,14 +261,6 @@ function newBorder2(){
   document.getElementById("footer").style.borderColor = "cyan"
 }
 
-<<<<<<< Updated upstream
-function newBorder3(){
-  document.getElementById("header").style.borderColor = "lime"
-  document.getElementById("footer").style.borderColor = "lime"
-}
-
-=======
->>>>>>> Stashed changes
 function newBorder4(){
   document.getElementById("header").style.borderColor = "crimson"
   document.getElementById("footer").style.borderColor = "crimson"
