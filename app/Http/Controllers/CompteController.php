@@ -21,14 +21,4 @@ class CompteController extends Controller
 		
 		return redirect('/');
 	}
-
-	public function info(){
-		$info = crash::table('utilisateurs')->get();
-
-        return view('compte');
-	}
-
-	
 }
-
-
