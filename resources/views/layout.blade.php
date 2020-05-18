@@ -7,15 +7,17 @@
 		<title>CTR Tool</title>
 
 		<!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 
 		<!-- Styles -->
 		<style>
+
 			html, body {
-				font-family: 'Nunito', sans-serif;
+				font-family: Arial, Helvetica, sans-serif;
 				margin: 0;
 				background-image: url("<?php echo asset('storage/ctr_background.jpg'); ?>");
 				background-size: cover;
+				font-size: 16px;
 			}
 			header {
 				width: 100%;
@@ -49,17 +51,12 @@
 				outline: 0;
 			}
 			#buttonNav1:hover{
-				border-color: orange;
+				border-color: lime;
 				border-bottom-color: #3a3a3a;
 				background-color: #3a3a3a;
 			}
 			#buttonNav2:hover{
 				border-color: cyan;
-				border-bottom-color: #3a3a3a;
-				background-color: #3a3a3a;
-			}
-			#buttonNav3:hover{
-				border-color: lime;
 				border-bottom-color: #3a3a3a;
 				background-color: #3a3a3a;
 			}
@@ -150,7 +147,11 @@
 			width: 30%;
 			height: 300px;
 			border: solid white 1px;
+<<<<<<< Updated upstream
 			background-color: rgba(180, 180, 180, 1);
+=======
+			background-color: lightgrey;
+>>>>>>> Stashed changes
 			display:inline-block;
 			text-align:center;
 			margin: 5px;
@@ -158,26 +159,93 @@
 
 		#connexion{
 		  text-align: center;
+<<<<<<< Updated upstream
 		  color:black;
 		  background-color:rgba(180, 180, 180, 1);
+=======
+		  background-color:black;
+		  color:white;
+>>>>>>> Stashed changes
 		  width:25%;
-		  border: solid white 1px;
 		  margin-top:12%;
 		  margin-left:37%;
 		  padding:10px;
+		  opacity: 0.9;
+		  border-radius: 20px;
 		}
 
 		#inscription{
 		  text-align: center;
+<<<<<<< Updated upstream
 		  color:black;
 		  background-color:rgba(180, 180, 180, 1);
+=======
+		  background-color:black;
+		  color:white;
+>>>>>>> Stashed changes
 		  width:25%;
-		  border: solid white 1px;
 		  margin-top:12%;
 		  margin-left:37%;
 		  padding:10px;
+		  opacity: 0.9;
+		  border-radius: 20px;
 		}
 
+<<<<<<< Updated upstream
+=======
+		.Compte{
+			background-color:black;
+			width:30%;
+			height:330px;
+			margin-top:200px;
+			margin-left:35%;
+			border-radius:20px;
+			padding:10px;
+			text-align: center;
+			color:white;
+			opacity: 0.9;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		h3{
+			color:orange;
+		}
+
+		h1{
+			font-family:Bangers;
+		}
+
+
+		.button{
+			background-color: white;
+			text-decoration: none;
+			color: black;
+			border-radius:100px;
+			padding:8px;
+		}
+
+		.button:hover{
+			transform: scale(0.9,0.9);
+			display: inline-block; 
+		}
+
+		label{
+			color:orange;
+		}
+
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 576px) {
+	html, body {
+				display: none;
+			}
+}
+
+
+
+>>>>>>> Stashed changes
 	</style>
 	</head>
 	<header id="header">
@@ -201,8 +269,13 @@
 <script>
 
 function newBorder1(){
+<<<<<<< Updated upstream
   document.getElementById("header").style.borderColor = "orange"
   document.getElementById("footer").style.borderColor = "orange"
+=======
+  getHeader.borderColor = "lime";
+  getFooter.borderColor = "lime";
+>>>>>>> Stashed changes
 }
 
 function newBorder2(){
@@ -210,11 +283,14 @@ function newBorder2(){
   document.getElementById("footer").style.borderColor = "cyan"
 }
 
+<<<<<<< Updated upstream
 function newBorder3(){
   document.getElementById("header").style.borderColor = "lime"
   document.getElementById("footer").style.borderColor = "lime"
 }
 
+=======
+>>>>>>> Stashed changes
 function newBorder4(){
   document.getElementById("header").style.borderColor = "crimson"
   document.getElementById("footer").style.borderColor = "crimson"
