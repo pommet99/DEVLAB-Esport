@@ -2,14 +2,6 @@
 
 @section('content')
 
-<<<<<<< Updated upstream
-<div style="text-align: center;color: white;">	
-	<h1>Votre compte</h1>
-	<a>lien vers Twich</a>
-	<a href="/deconnexion">Déconnexion</a>
-<div>
-	
-=======
 <div class="Compte">
 		<h3>Données Personelles :</h3>
 		<div class="perso">
@@ -32,5 +24,4 @@
 	</div>
 </div> 
 
->>>>>>> Stashed changes
 @endsection

@@ -60,6 +60,11 @@
 				border-bottom-color: #3a3a3a;
 				background-color: #3a3a3a;
 			}
+			#buttonNav3:hover{
+				border-color: orange;
+				border-bottom-color: #3a3a3a;
+				background-color: #3a3a3a;
+			}
 			#buttonNav4:hover{
 				border-color: crimson;
 				border-bottom-color: #3a3a3a;
@@ -99,10 +104,10 @@
 		.tournoi_create_div{
 			margin: auto;
 			margin-top:100px;
-			border: solid white 3px;
-			background-color: rgba(180, 180, 180, 1);
+			background-color: black;
 			height: 500px;
 			width: 70%;
+			border-radius:20px;
 		}
 		.tournoi_create_div_left{
 			float: left;
@@ -147,7 +152,7 @@
 			width: 30%;
 			height: 300px;
 			border: solid white 1px;
-			background-color: lightgrey;
+			background-color: black;
 			display:inline-block;
 			text-align:center;
 			margin: 5px;
@@ -180,7 +185,7 @@
 		.Compte{
 			background-color:black;
 			width:30%;
-			height:330px;
+			height:300px;
 			margin-top:200px;
 			margin-left:35%;
 			border-radius:20px;
@@ -252,13 +257,18 @@
 <script>
 
 function newBorder1(){
-  getHeader.borderColor = "lime";
-  getFooter.borderColor = "lime";
+  document.getElementById("header").style.borderColor = "lime"
+  document.getElementById("footer").style.borderColor = "lime"
 }
 
 function newBorder2(){
   document.getElementById("header").style.borderColor = "cyan"
   document.getElementById("footer").style.borderColor = "cyan"
+}
+
+function newBorder3(){
+  document.getElementById("header").style.borderColor = "orange"
+  document.getElementById("footer").style.borderColor = "orange"
 }
 
 function newBorder4(){
