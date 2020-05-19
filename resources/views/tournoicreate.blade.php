@@ -2,6 +2,14 @@
 
 @section('content')
 
+<style>
+	@media (max-width: 420px){
+		#footer{
+			visibility: hidden;
+		}
+	}
+</style>
+
 <div id="tournoi_create">
 	<div class="tournoi_create_div">
 		<div class="tournoi_create_div_left">
@@ -38,7 +46,7 @@
 		
 		<div class="tournoi_create_div_right">
 			<div class="choix_des_cartes_div_titre">
-				<h3 style="margin-left:35%">Choix des cartes</h3>
+				<h3>Choix des cartes</h3>
 			</div>
 			<div class="choix_des_cartes_div">
 				<div class="carte">Crash Cove</div>
@@ -64,6 +72,9 @@
 		</div>
 	</div>
 </div>
+
+
+
 
 <script>
 /*

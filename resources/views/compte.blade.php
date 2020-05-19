@@ -3,7 +3,8 @@
 @section('content')
 
 <div class="Compte">
-		<h3>Données Personelles :</h3>
+		<h3>Données Personelles</h3>
+		<br>
 		<div class="perso">
 		<b><a>Pseudo:</a> {{ Auth::user()->pseudo }}</b>
 		<br>
@@ -12,7 +13,7 @@
 	</div>
 	<br>
 	<div class="tournoi">
-		<h3>Tournoi :</h3>
+		<h3>Tournoi</h3>
 		@if(!empty($utilisateurs->tournoi_id))
 			<b> Vous participez au {{$tournois->nom}} le {{$tournois->date_tournoi}}</b>	
 		@else

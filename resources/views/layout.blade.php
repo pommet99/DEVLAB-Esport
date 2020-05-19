@@ -131,7 +131,7 @@
 			text-align: center;
 		}
 		.choix_des_cartes_div_titre{
-			margin: auto;
+			margin-left: 35%;
 			margin-top: 10px;
 			height: 60px;
 			width: calc(100% - 20px);
@@ -153,14 +153,14 @@
 			line-height: 100px;
 		}
 		.all_salon_display{
-			width: 25%;
-			height: 280px;
-			border: solid white 1px;
+			width: 20%;
+			height: 225px;
 			background-color: black;
 			display:inline-block;
 			text-align:center;
 			margin: 5px;
 			opacity: 0.9;
+			border-radius:20px;
 		}
 
 		#connexion{
@@ -190,7 +190,7 @@
 		.Compte{
 			background-color:black;
 			width:30%;
-			height:300px;
+			height:320px;
 			margin-top:200px;
 			margin-left:35%;
 			border-radius:20px;
@@ -301,7 +301,7 @@ html, body {
 	width:70%;
 	margin-top:25%;
 	margin-left:15%;
-		}
+	}
 
 #inscription{
 	width:70%;
@@ -310,17 +310,52 @@ html, body {
 	}
 
 .Compte{
-			width:70%;
-			height:300px;
-			margin-top:25%;
-			margin-left:15%;
-			border-radius:20px;
-			padding:10px;
-			text-align: center;
-			color:white;
-			opacity: 0.9;
-			font-family: Arial, Helvetica, sans-serif;
-		}
+	width:70%;
+	height:340px;
+	margin-top:30%;
+	margin-left:15%;
+	border-radius:20px;
+    }
+
+.tournoi_create_div{
+	height: 100%;
+	width: 70%;
+	background-color: black;
+	text-align: center;
+	}
+
+.tournoi_create_div_left{
+	width:250px;
+	height:400px;
+	background-color: black;
+	border-radius: 20px;
+	padding:15px;
+	float:none;
+	}
+
+.tournoi_create_div_right{
+	width:20px;
+	height:500px;
+	background-color: black;
+	border-radius: 20px;
+	padding:15px;
+	margin-left: 30px;
+	float:none;
+	}
+
+.choix_des_cartes_div_titre{
+    margin-left:5%;
+}
+
+.all_salon_display{
+    width: 50%;
+    height: 230px;
+    margin: 5px;
+    opacity: 0.9;
+    border-radius:20px;
+}
+
+
 }
 
 
@@ -355,6 +390,7 @@ html, body {
 
 	<footer id="footer">
 	</footer>
+
 	
 <script>
 

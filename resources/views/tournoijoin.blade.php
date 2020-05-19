@@ -2,14 +2,13 @@
 
 @section('content')
 
-<div style="color:white;text-align: center;" class="tournoijoin">
+<div style="color:white;text-align: center;margin-top:12%;" class="tournoijoin">
 
-	<h1 style="text-align:center;">Rejoindre un salon</h1>
 	<!--foreach-->
 	@if(!empty($tournois))
 		@foreach($tournois as $tournoi)
 			<div class="all_salon_display">
-				<h3><span style="color:orange;">{{ $tournoi->nom }}</span></h3>
+				<h3 style="margin-top:10px;"><span style="color:orange;">{{ $tournoi->nom }}</span></h3>
 				<p>Admin: <span style="color:orange;">-<span></p>
 				<p>Nombre d'incrits : <span style="color:orange;">-<span> / 8</p>
 				<p>Date : <span style="color:orange;">{{ $tournoi->date }}<span></p>
