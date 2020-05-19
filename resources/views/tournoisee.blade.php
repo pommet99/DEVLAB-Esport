@@ -10,7 +10,7 @@
 			text-align: center;
 			background-color: #18171B;
 			box-shadow: 4px 4px 4px gray;
-			margin-top: 30px;
+			margin-top: 100px;
 			font-family: Arial;
 		}
 	th{
@@ -40,7 +40,6 @@
 	
 </style>
 
-	<h2 style="tournois_titre">Liste des Tounois achevés</h2>
 	
 	@if(!empty($tournois))
 		<table class="table_class">

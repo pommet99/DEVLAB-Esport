@@ -8,6 +8,8 @@
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+		<!-- Bootstrap only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 		<!-- Styles -->
 		<style>
@@ -17,7 +19,7 @@
 				margin: 0;
 				background-image: url("<?php echo asset('storage/ctr_background.jpg'); ?>");
 				background-size: cover;
-				font-size: 16px;
+				font-size: 14px;
 			}
 			header {
 				width: 100%;
@@ -45,10 +47,11 @@
 				transition: .25s;
 				background-color: transparent;
 				color: white;
-				margin-top: 10px;
 				border-top-left-radius: 10px;
 				border-top-right-radius: 10px;
 				outline: 0;
+				margin-top:7px;
+				font-size: 14px;
 			}
 			#buttonNav1:hover{
 				border-color: lime;
@@ -75,9 +78,9 @@
 				margin-top:180px;
 				position: absolute;
 				width: 100%;
-				height: 48px;
+				height: 5%;
 				background-color: black;
-				line-height: 48px;
+				line-height: 5%;
 				border-top: solid black 2px;
 				transition: .5s;
 				bottom: 0;
@@ -108,6 +111,7 @@
 			height: 500px;
 			width: 70%;
 			border-radius:20px;
+			opacity: 0.9;
 		}
 		.tournoi_create_div_left{
 			float: left;
@@ -149,13 +153,14 @@
 			line-height: 100px;
 		}
 		.all_salon_display{
-			width: 30%;
-			height: 300px;
+			width: 25%;
+			height: 280px;
 			border: solid white 1px;
 			background-color: black;
 			display:inline-block;
 			text-align:center;
 			margin: 5px;
+			opacity: 0.9;
 		}
 
 		#connexion{
@@ -226,19 +231,104 @@
 
 /*RESPONSIVE*/
 
-@media (max-width: 576px) {
-	html, body {
-				display: none;
-			}
+@media (min-width: 420px) {
+.navbar {
+	display: none;
 }
 
+}
+
+@media (max-width: 420px) {
+#header {
+    display: none;
+	}
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image:none;
+	background-color: cornflowerblue;
+	font-size: 14px;
+   }
+
+.navbar{
+    width:100%;
+	height:50px;
+	background-color: black;
+}
+
+.dropbtn {
+  background-color: #18171B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 60px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 80px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding:5px;
+  text-align: center;
+  height: 30px;
+  width: 70px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: orange;
+}
+
+#connexion{
+	width:70%;
+	margin-top:25%;
+	margin-left:15%;
+		}
+
+#inscription{
+	width:70%;
+	margin-top:25%;
+	margin-left:15%;
+	}
+
+.Compte{
+			width:70%;
+			height:300px;
+			margin-top:25%;
+			margin-left:15%;
+			border-radius:20px;
+			padding:10px;
+			text-align: center;
+			color:white;
+			opacity: 0.9;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+}
 
 
 	</style>
 	</head>
 	<header id="header">
 		<div class="headerLeft">
-			<button class="buttonNav" id="buttonNav1" onmouseover="newBorder1()" onmouseout="endNewBorder()" onclick="window.location='{{ url('compte') }}'">Mon compte</button>
+			<button class="buttonNav" id="buttonNav1" onmouseover="newBorder1()" onmouseout="endNewBorder()" onclick="window.location='{{ url('compte') }}'">Compte</button>
 			<button class="buttonNav" id="buttonNav2" onmouseover="newBorder2()" onmouseout="endNewBorder()" onclick="window.location='{{ url('tournoi') }}'">Tournoi</button>
 		</div>
 		<div class="headerRight">
@@ -246,11 +336,23 @@
 			<button class="buttonNav" id="buttonNav4" onmouseover="newBorder4()" onmouseout="endNewBorder()" onclick="window.location='{{ url('inscription') }}'">Inscription</button>
 		</div>
 	</header>
+
+	<div class="navbar">
+	<div class="dropdown">
+		<button class="dropbtn">Menu</button>
+		<div class="dropdown-content">
+			<a href="inscription">S'inscricre</a>
+			<a href="compte">Compte</a>
+			<a href="tournoi">Tournoi</a>
+		</div>
+	  </div>
+	</div>
 	<body>
 
 		@yield('content')
 		
 	</body>
+
 	<footer id="footer">
 	</footer>
 	

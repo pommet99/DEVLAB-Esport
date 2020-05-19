@@ -2,23 +2,7 @@
 
 @section('content')
 
-<style>
-	
-	.all_salon_display{
-		width: 30%;
-		height: 300px;
-		border: solid white 1px;
-		//background-color: rgba(180, 180, 180, 1);
-		background-color: rgba(0, 0, 0, 0.85);
-		display:inline-block;
-		text-align:center;
-		margin: 5px;
-		font-family: Arial;
-	}
-	
-</style>
-
-<div style="color:white;text-align: center;">
+<div style="color:white;text-align: center;" class="tournoijoin">
 
 	<h1 style="text-align:center;">Rejoindre un salon</h1>
 	<!--foreach-->

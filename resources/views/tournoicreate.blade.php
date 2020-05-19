@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container" id="tournoi_create">
+<div id="tournoi_create">
 	<div class="tournoi_create_div">
 		<div class="tournoi_create_div_left">
 			<div class="tournoi_create_left">
