@@ -341,10 +341,13 @@ html, body {
 	padding:15px;
 	margin-left: 30px;
 	float:none;
+	margin-bottom:100px;
 	}
 
 .choix_des_cartes_div_titre{
-    margin-left:5%;
+   width:220px;
+   margin:0;
+   margin-left:-25px;
 }
 
 .all_salon_display{
