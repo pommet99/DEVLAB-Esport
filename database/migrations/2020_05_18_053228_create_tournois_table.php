@@ -16,13 +16,12 @@ class CreateTournoisTable extends Migration
         Schema::create('tournois', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-			$table->string('nom')->unique();
-			$table->string('password');
-			$table->date('date_tournoi');
-			$table->integer('utilisateurs_id');
-			$table->integer('cartes_id');
-			$table->foreign('utilisateurs_id')->references('id')->on('utilisateurs')->onDelete('cascade')->nullable();
-			$table->foreign('cartes_id')->references('id')->on('cartes')->nullable();
+            $table->string('nom')->unique();
+            $table->string('password');
+            $table->date('date');
+            $table->string('admin');
+            $table->integer('cartes_id')->nullable();
+            $table->foreign('cartes_id')->references('id')->on('cartes')->nullable();
         });
     }
 

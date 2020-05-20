@@ -19,7 +19,9 @@ class CreateUtilisateursTable extends Migration
 			$table->string('email')->unique();
 			$table->string('pseudo')->unique();
 			$table->string('password');
-			$table->text('role')->nullable();
+			$table->string('role')->nullable();
+			$table->integer('tournoi_id')->nullable();
+			$table->foreign('tournoi_id')->references('id')->on('tournoi')->onDelete('cascade')->nullable();
         });
     }
 

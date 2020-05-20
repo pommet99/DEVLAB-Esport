@@ -18,7 +18,7 @@
 			width: 80%;
 			text-align: center;
 			background-color: #18171B;
-			box-shadow: 4px 4px 4px gray;
+			box-shadow: 4px 4px 4px #18171B;
 			margin-top: 30px;
 			font-family: Arial;
 		}
@@ -37,7 +37,21 @@
 	.tableBgOrange{
 		background: linear-gradient(45deg, orange, yellow);
 	}
+	
+		/*RESPONSIVE*/
 
+	@media (max-width: 800px) {
+		
+		.user_titre{
+			color: white;
+			text-align: center;
+			background-color: transparent;
+			width: auto;
+			margin: auto;
+			margin-top: 30px;
+		}
+		
+	}
 </style>
 
 <h1 class="user_titre">Liste des utilisateurs</h1>

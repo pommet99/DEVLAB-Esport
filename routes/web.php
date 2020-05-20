@@ -28,16 +28,29 @@ Route::get('/deconnexion', 'CompteController@deconnexion');
 
 Route::get('/utilisateurs', 'UtilisateursController@liste');
 
+Route::get('/compteedit/{id}','CompteController@edit');
+Route::post('/compteedit/{id}', 'CompteController@edittraitement');
+
 // TOURNOI
 
 Route::get('/tournoi', 'TournoiController@tournoi');
-Route::get('/tournoicreate', 'TournoiController@creer');
 Route::get('/tournoijoin', 'TournoiController@rejoindre');
 Route::get('/tournoisee', 'TournoiController@see');
 
-Route::post('/tournoicreate', 'TournoiController@creertraitement');
+Route::get('/tournoicreate', 'TournoiController@creer');
+Route::post('/tournoicreate', 'TournoiController@traitement');
+
+Route::get('/tournoiunique/{id}', 'TournoiController@rejoindreunique');
 
 // CARTE
 
 Route::get('/carte','CartesController@listeCarte');
 Route::post('/carte','CartesController@traitement');
+
+Route::get('/carteedit/{id}', 'CartesController@edit');
+Route::post('/carteedit/{id}', 'CartesController@edittraitement');
+Route::get('/cartedesroy/{id}', 'CartesController@destroy');
+
+
+
+

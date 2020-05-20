@@ -16,8 +16,8 @@ class CreateCartesTable extends Migration
         Schema::create('cartes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-			$table->string('nom')->unique();
-			$table->boolean('etat')->default(false);
+            $table->string('nom')->unique();
+            $table->boolean('etat')->default(false);
         });
     }
 

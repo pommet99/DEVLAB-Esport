@@ -7,7 +7,7 @@
 	.Compte{
 		background-color:black;
 		width:30%;
-		height:320px;
+		height:300px;
 		margin-top:200px;
 		margin-left:35%;
 		border-radius:20px;
@@ -37,8 +37,6 @@
 		color: white;
 	}
 	
-	/*RESPONSIVE*/
-
 	@media (max-width: 800px) {
 	
 		.Compte{
@@ -58,28 +56,21 @@
 
 <div class="Compte">
 
-	<h3>Données Personelles :</h3>
+	<h3>Modifier le pseudo :</h3>
 	
-	<div class="perso">
-		<b>Pseudo : {{ Auth::user()->pseudo }}</b> - 
-		<b>Email : {{ Auth::user()->email }}</b><br><br>
-		<button onclick="window.location='{{ url('compteedit/'.Auth::user()->id) }}'">Editer</button>
-	</div>
-
-	<div class="tournoi">
-		<h3>Tournoi :</h3>
-		@if(!empty($tournois))
-			<b>Vous participez au : {{$tournois->nom}}
-			<br>Date du tournoi : {{$tournois->date}}</b>
-		@else
-			<b>Vous ne participer à aucun tournoi</b>	
+	<form action="" method="POST">
+	
+	<b>Pseudo actuel : {{ Auth::user()->pseudo }}</b>
+	
+	{{ csrf_field()  }}
+		@if($errors->has('pseudo'))
+			<p style="color:red;">{{ $errors->first('pseudo') }}</p>
 		@endif
-	</div>
-	<br>
-	<div class="twitch">
-		<h3>Voir sur twitch :</h3>
-		<button onclick="location.href='https://www.twitch.tv/directory/game/Crash%20Team%20Racing%3A%20Nitro%20Fueled';" value="go twitch" class="button"><b>Cliquez-ici</b></button>
-	</div>
+		<br><br><br><p><label>Nouveau pseudo</label></p><p><input type="text" name="pseudo" value="{{ old('pseudo') }}"></p>
+		
+		<p><input type="submit" value="Modifier"></p>
+	</form>
+
 </div> 
 
 @endsection

@@ -25,6 +25,6 @@ class InscriptionController extends Controller
 			'password' => bcrypt(request('password')),
 		]);
 		
-		return redirect('/connexion');
+		return redirect('/tournoi');
 	}
 }
